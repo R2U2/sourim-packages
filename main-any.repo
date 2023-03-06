@@ -1,10 +1,17 @@
-packages=bash
-
-# Bash from source
-bash_package=bash-5.2.15
-bash_type=source
-bash_source=https://ftp.gnu.org/gnu/bash/bash-5.2.15.tar.gz
-bash_source_unpack=tar
-bash_make_configure=./configure --prefix=/usr
-bash_make_compile=make
-bask_make_install=make install
+{
+  "name_packages":"bash",
+  "packages":[
+    {
+      "type":"source",
+      "package":"bash-5.2.15",
+      "alias":"bash",
+      "source":"https://ftp.gnu.org/gnu/bash/bash-5.2.15.tar.gz",
+      "archive":"tar",
+      "make":{
+        "configure":"./configure --prefix=/usr",
+        "compile":"make",
+        "install":"make install"
+      }
+    }
+  ]
+}
