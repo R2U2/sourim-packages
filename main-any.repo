@@ -6,7 +6,8 @@
       "package":"bash-5.2.15",
       "alias":"bash",
       "source":"https://ftp.gnu.org/gnu/bash/bash-5.2.15.tar.gz",
-      "archive":"tar",
+      "archive":"bash-5.2.15.tar.gz",
+      "unpack":"tar",
       "make":{
         "configure":"./configure --prefix=/usr",
         "compile":"make",
